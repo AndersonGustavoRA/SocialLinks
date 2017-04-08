@@ -15,13 +15,15 @@
 				</args>
 			</AndersonAlves_SocialLinks_Router1>
 		</routers>
+		<layout>
+			<updates>
+				<AndersonAlves_SocialLinks>
+					<file>sociallinks.xml</file>
+				</AndersonAlves_SocialLinks>
+			</updates>
+		</layout>
 	</frontend>
 	<global>
-		<models>
-			<sociallinks>
-				<class>AndersonAlves_SocialLinks_Model</class>
-			</sociallinks>
-		</models>
 		<helpers>
 			<sociallinks>
 				<class>AndersonAlves_SocialLinks_Helper</class>
@@ -33,28 +35,4 @@
 			</sociallinks>
 		</blocks>
 	</global>
-	<adminhtml>
-		<acl>
-			<resources>
-				<all>
-					<title>Allow Everything</title>
-				</all>
-				<admin>
-					<children>
-						<system>
-							<children>
-								<config>
-									<children>
-										<andersonalves_options>
-											<title>andersonalves - All</title>
-										</andersonalves_options>
-									</children>
-								</config>
-							</children>
-						</system>
-					</children>
-				</admin>
-			</resources>
-		</acl>
-	</adminhtml>
 </config>

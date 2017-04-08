@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<andersonalves_sociallinks>
+		<reference>
+			<block type="sociallinks/sociallinks" name="sociallinks" template="sociallinks/sociallinks.phtml"/>
+		</reference>
+	</andersonalves_sociallinks>
+	<catalog_product_view>
+		<reference name="head">
+			<action method="addItem"> <type>skin_css</type> <file>css/rrssb.css</file> </action>
+			<action method="addItem"> <type>skin_js</type> <file>js/rrssb.min.js</file> </action>
+		</reference>
+		<reference name="product.info.addtocart">
+			<block type="sociallinks/sociallinks" name="sociallinks" template="sociallinks/sociallinks.phtml"/>
+		</reference>
+	</catalog_product_view>
+</layout>
